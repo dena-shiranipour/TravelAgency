@@ -43,7 +43,11 @@ public class Train {
         this.customerCollection = customerCollection;
     }
 
+    public void addCustomer (Customer newCustomer){
+        this.customerCollection.add(newCustomer);
+    }
 
+    
 
 
 }

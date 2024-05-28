@@ -25,7 +25,7 @@ public class Customer {
         return wallet;
     }
 
-    public void setWallet(double wallet) {
+    public void setWallet (double wallet) {
         this.wallet = wallet;
     }
 
@@ -34,14 +34,17 @@ public class Customer {
 
     public boolean canAffordTrain (Train train){
 
-        if (this.wallet>= train.getPrice()) {
+        if (this.wallet >= train.getPrice()) {
             return true;
         } else {
             return false;
         }
     }
 
-    public void canPay(Train train) {
+    public void pay(Train train) {
+        if (canAffordTrain(train)){
+            this.wallet -= train.getPrice();
+        }
     }
 
 
