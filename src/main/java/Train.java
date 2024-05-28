@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Train {
+public class Train implements Bookable{
 
 
     //properties
@@ -47,6 +47,10 @@ public class Train {
         this.customerCollection.add(newCustomer);
     }
 
+    public void removeCustomer (Customer exCustomer){
+        this.customerCollection.remove(exCustomer);
+
+    }
     public int customerCount (){
        return this.customerCollection.size();
     }
@@ -57,5 +61,6 @@ public class Train {
         }
         else return false;
     }
+
 
 }

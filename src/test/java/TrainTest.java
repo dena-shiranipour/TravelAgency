@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class TrainTest {
+public class TrainTest{
     Train train;
     Customer maria;
     Customer dena;
@@ -33,6 +33,7 @@ public class TrainTest {
         train.addCustomer(dena);
         assertThat(train.customerCount()).isEqualTo(2);
     }
+
 
 
 }
