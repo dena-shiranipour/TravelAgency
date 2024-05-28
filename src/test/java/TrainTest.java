@@ -13,7 +13,7 @@ public class TrainTest{
     public void setUp() {
         train = new Train(34, 100);
         maria = new Customer("maria", 200);
-        dena = new Customer("Dena", 200);
+        dena = new Customer("dena", 200);
     }
 
     @Test
