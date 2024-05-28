@@ -1,8 +1,12 @@
 public class TravelAgent {
 
-    // properties
 
 
+//    Method
+
+//    make bookings
+
+//    cancel bookings
 
 
 

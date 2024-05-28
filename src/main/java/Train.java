@@ -39,7 +39,7 @@ public class Train {
         return customerCollection;
     }
 
-    public void setCustomers(ArrayList<Customer>){
+    public void setCustomers(ArrayList<Customer> customerCollection){
         this.customerCollection = customerCollection;
     }
 
