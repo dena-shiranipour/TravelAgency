@@ -47,7 +47,9 @@ public class Train {
         this.customerCollection.add(newCustomer);
     }
 
-    
+    public int customerCount (){
+       return this.customerCollection.size();
+    }
 
 
 }

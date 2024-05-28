@@ -2,7 +2,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertThat;
+
 
 public class TrainTest {
     Train train;
@@ -30,7 +30,7 @@ public class TrainTest {
     @Test
     public void hasCustomers() {
         train.addCustomer(maria);
-        assertThat(train.getCustomers()).isEqualTo();
+        assertThat(train.customerCount()).isEqualTo(1);
     }
 
 
