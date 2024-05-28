@@ -51,5 +51,11 @@ public class Train {
        return this.customerCollection.size();
     }
 
+    public boolean capacityLimit(){
+        if (customerCollection.size() < capacity){
+            return true;
+        }
+        else return false;
+    }
 
 }

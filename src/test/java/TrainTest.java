@@ -30,10 +30,9 @@ public class TrainTest {
     @Test
     public void hasCustomers() {
         train.addCustomer(maria);
-        assertThat(train.customerCount()).isEqualTo(1);
+        train.addCustomer(dena);
+        assertThat(train.customerCount()).isEqualTo(2);
     }
-
-
 
 
 }
